@@ -1,0 +1,171 @@
+/*Fonts: Google font*/
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  /*Farver*/
+  :root{
+    color: #99CAF3;
+    color: #58B5E3;
+    color: #027BAB;
+    color: #FF8752;
+    color: #F76AAB;
+    color: #000;
+    color: #fff;
+  }
+
+ /*ChatGPT: "Hvordan laver man en hovedmenulinje, med submener og supplerende subsubmenuer?" https://chatgpt.com/share/67091fe6-a534-8009-9e7a-46c0bbf73d1d*/ 
+/* Style hovedmenuen */
+.main-menu {
+    font-family: "Bebas Neue";
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #58B5E3;
+  }
+  
+.main-menu li {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+  }
+  
+.main-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    z-index: 1000;
+  }
+  
+.main-menu li a:hover {
+    background-color: #027bab;
+    z-index: 1000;
+  }
+
+.søgefelt{
+    justify-content: right;
+    padding: 9px;
+    margin-top: -40px;
+    margin-left: 1320px;
+    font-size: 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  
+/* Skjul submenuer som standard */
+.submenu, .subsubmenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ff8752;
+    z-index: 1000;
+  }
+  
+/* Style submenupunkter */
+.submenu li, .subsubmenu li {
+    display: block;
+    z-index: 1000;
+  }
+  
+.submenu li a, .subsubmenu li a {
+    padding: 10px 20px;
+    color: white;
+    z-index: 1000;
+}
+  
+.submenu li a:hover, .subsubmenu li a:hover {
+    background-color: #f76aab;
+    z-index: 1000;
+}
+  
+  /* Vis submenu når musen er over */
+  .main-menu li:hover > .submenu {
+    display: block;
+    z-index: 1000;
+  }
+  
+  /* Vis subsubmenu når musen er over */
+  .submenu li:hover > .subsubmenu {
+    display: block;
+    left: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  main{
+    background-color: #99CAF3;
+  }
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .column {
+    width: 30%;
+    text-align: center;
+    }
+
+.billeder1{
+    display: grid;
+    justify-content: left;
+    }
+
+.billeder2{
+    display: grid;
+    justify-content: left;
+    margin-left: 285px;
+    }
+
+  .tekst{
+    display: block;
+    justify-content: center;
+  }
+
+  h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+  p{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+  }
+
+  .footer{
+    background-color: #FF8752;
+}
+
+  .ikoner{
+    display: flex;
+    justify-content: right;
+  }

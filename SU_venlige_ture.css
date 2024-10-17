@@ -1,0 +1,270 @@
+/*Fonts: Google font*/
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  /*Farver*/
+  :root{
+    color: #99CAF3;
+    color: #58B5E3;
+    color: #027BAB;
+    color: #FF8752;
+    color: #F76AAB;
+    color: #000;
+    color: #fff;
+  }
+
+ /*ChatGPT: "Hvordan laver man en hovedmenulinje, med submener og supplerende subsubmenuer?" https://chatgpt.com/share/67091fe6-a534-8009-9e7a-46c0bbf73d1d*/ 
+/* Style hovedmenuen */
+.main-menu {
+    font-family: "Bebas Neue";
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #58B5E3;
+  }
+  
+  .main-menu li {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+  }
+  
+  .main-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    z-index: 1000;
+  }
+  
+  .main-menu li a:hover {
+    background-color: #027bab;
+    z-index: 1000;
+  }
+
+  .søgefelt{
+    justify-content: right;
+    padding: 9px;
+    margin-top: -40px;
+    margin-left: 1320px;
+    font-size: 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  
+  /* Skjul submenuer som standard */
+  .submenu, .subsubmenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ff8752;
+    z-index: 1000;
+  }
+  
+  /* Style submenupunkter */
+  .submenu li, .subsubmenu li {
+    display: block;
+    z-index: 1000;
+  }
+  
+  .submenu li a, .subsubmenu li a {
+    padding: 10px 20px;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .submenu li a:hover, .subsubmenu li a:hover {
+    background-color: #f76aab;
+    z-index: 1000;
+  }
+  
+  /* Vis submenu når musen er over */
+  .main-menu li:hover > .submenu {
+    display: block;
+    z-index: 1000;
+  }
+  
+  /* Vis subsubmenu når musen er over */
+  .submenu li:hover > .subsubmenu {
+    display: block;
+    left: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+  }
+
+main{
+    background-color: #99CAF3;
+}
+
+/*w3schools: "CSS Flex Container" https://www.w3schools.com/css/css3_flexbox_container.asp*/
+.backpacker{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.tekst1{
+    margin-left: 50px;
+}
+
+.backpacker_billede{
+    margin: 20px;
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+    padding: 20px;
+}
+
+/*w3schools: "CSS flex-direction Property" https://www.w3schools.com/cssref/css3_pr_flex-direction.php*/
+.baad{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 400px;
+}
+
+.tekst2{
+    margin-left: 0px;
+}
+
+.baad_billede{
+    margin: 20px;
+    margin-left: -700px;
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    padding: 10px;
+}
+
+.budda{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.tekst3{
+    margin-left: 70px;
+}
+
+.budda_billede{
+    margin: 20px;
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+    padding: 20px;
+}
+
+/*w3schools: "CSS flex-direction Property" https://www.w3schools.com/cssref/css3_pr_flex-direction.php*/
+.madmarked{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 400px;
+}
+
+.tekst4{
+    margin-left: 0px;
+}
+
+.madmarked_billede{
+    margin: 20px;
+    margin-left: -700px;
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    padding: 10px;
+}
+
+.skybar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.tekst5{
+    margin-left: 70px;    
+}
+
+.skybar_billede{
+    margin: 20px;
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    padding: 10px;
+}
+
+/*w3schools: "CSS flex-direction Property" https://www.w3schools.com/cssref/css3_pr_flex-direction.php*/
+.snorkel{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 400px;
+}
+
+.tekst6{
+    margin-left: 0px; 
+}
+
+.snorkel_billede{
+    margin: 30px;
+    margin-left: -700px;
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    padding: 10px;
+}
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F76AAB;
+    padding-top: 30px;
+}
+
+h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#027BAB;
+}
+
+p{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;  
+    color: #000;
+    padding-top: 20px;
+}
+
+  .footer{
+    background-color: #FF8752;
+}
+
+  .ikoner{
+    display: flex;
+    justify-content: right;
+  }

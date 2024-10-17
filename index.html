@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brev fra rejsen - forside</title>
+<!--Link til stylesheet-->
+    <link rel="stylesheet" href="index.css">
+
+<!--Fonts: Google Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+<!--Logoet-->
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_endelig.png" alt="logo"></a>
+        </div>
+
+<!--ChatGPT: "Hvordan laver man en hovedmenulinje, med submener og supplerende subsubmenuer?" https://chatgpt.com/share/67091fe6-a534-8009-9e7a-46c0bbf73d1d -->
+<nav>
+    <ul class="main-menu">
+        <li><a href="#">Rejsetyper</a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Hvor går rejsen hen i denne måned?</a>
+                <ul class="subsubmenu">
+                  <li><a href="solferie_året_rundt.html">Solferie året rundt</a></li>
+                  <li><a href="#">Vinterferien</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Billige rejser</a>
+                <ul class="subsubmenu">
+                  <li><a href="SU_venlige_ture.html">SU-vunlige ture</a></li>
+                  <li><a href="#">Destinationer</a></li>
+                </ul>
+              </li>
+            </ul>
+        </li>
+
+        <li><a href="pakkeråd.html">Pakkeråd</a>
+            <ul class="submenu">
+                <li><a href="#">Indkøbsliste</a></li>
+                <li>
+                <a href="#">Tips og tricks</a>
+                </li>
+            </ul>
+        </li>
+            <li><a href="#">Oplevelser</a>
+            <ul class="submenu">
+                <li><a href="#">Seværdigheder</a></li>
+            </ul>
+            </li>
+        <li><a href="#">Kontakt</a>
+            <ul class="submenu">
+                <li><a href="spørgsmål.html">Spørgsmål?</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Om</a>
+    </ul> 
+<!--Søgefelt: "create a search bar" https://www.w3schools.com/howto/howto_css_searchbar.asp--> 
+        <nav class="søgefelt"><input type="text" placeholder="Søg.."></nav>
+
+</nav>
+    </header>
+
+<main>
+    <div class="row">
+        <div class="column">
+            <img src="images/forside_billede1.png" alt="forside_billede1" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="images/forside_billede2.png" alt="forside_billede2" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="images/forside_billed3.png" alt="forside_billede3" style="width:100%">
+        </div>
+    </div>
+   
+
+<!--Tekstboks over billeder-->
+<div class="tekstboks1">
+    <a href="solferie_året_rundt.html"><div class="text-overlay_tekstboks1"><h1>Rejse til ...?</h1>
+   <p>Ønsker du solferie året rundt?<br>
+        Klik her for at se hvilke destinationer, der passer bedst til lige præcis den måned du skal rejse, så du er garanteret sol!</div></a>
+</div>
+
+<div class="tekstboks2">
+    <a href="SU_venlige_ture.html"><div class="text-overlay_tekstboks2"><h1>Billige rejser uanset budget</h1>
+    <p>Er du på SU eller ønsker du blot en billigere rejse?<br>
+        Klik her og se hvor du kan rejse hen, uden at du behøver medbringe den helt store pengepung!</div></a>
+</div>
+
+<div class="tekstboks3">
+<a href="pakkeråd.html"><div class="text-overlay_tekstboks3"><h1>Hjælp til pakkelisten?</h1>
+    <p>Vi har opstillet den optimale pakkeguide til dig, uanset hvor du skal hen!<br>
+        Klik her for at finde pakkelisten til dig; uanset om du skal i sol eller sne!</div></a>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="ikoner">
+        <a href="https://www.instagram.com/"><img src="images/instagram_icon.png" alt="instagram_icon"></a>
+        <a href="https://www.facebook.com/"><img src="images/facebook_icon.png" alt="facebook_icon"></a>
+        <a href="https://www.youtube.com/"><img src="images/youtube_icon.png" alt="youtube_icon"></a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+/*Fonts: Google font*/
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  /*Farver*/
+  :root{
+    color: #99CAF3;
+    color: #58B5E3;
+    color: #027BAB;
+    color: #FF8752;
+    color: #F76AAB;
+    color: #000;
+    color: #fff;
+  }
+
+ /*ChatGPT: "Hvordan laver man en hovedmenulinje, med submener og supplerende subsubmenuer?" https://chatgpt.com/share/67091fe6-a534-8009-9e7a-46c0bbf73d1d*/ 
+/* Style hovedmenuen */
+.main-menu {
+    font-family: "Bebas Neue";
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #58B5E3;
+  }
+  
+  .main-menu li {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .main-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main-menu li a:hover {
+    background-color: #027bab;
+  }
+  
+  /* Skjul submenuer som standard */
+  .submenu, .subsubmenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ff8752;
+  }
+  
+  /* Style submenupunkter */
+  .submenu li, .subsubmenu li {
+    display: block;
+  }
+  
+  .submenu li a, .subsubmenu li a {
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .submenu li a:hover, .subsubmenu li a:hover {
+    background-color: #f76aab;
+  }
+  
+  /* Vis submenu når musen er over */
+  .main-menu li:hover > .submenu {
+    display: block;
+  }
+  
+  /* Vis subsubmenu når musen er over */
+  .submenu li:hover > .subsubmenu {
+    display: block;
+    left: 100%;
+    top: 0;
+  }
+
+  .søgefelt{
+    justify-content: right;
+    padding: 9px;
+    margin-top: -40px;
+    margin-left: 1320px;
+    font-size: 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+  }
+
+  .section {
+    padding: 10px;
+    color: #000;
+}
+
+/*ChatGPT: "Hvordan opdeler man en side efter flere forskellige farver?" https://chatgpt.com/share/670cecfe-8ad8-8009-a1b4-49296ad6582c*/
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 5ch;
+    font-style: normal;
+}
+
+p{
+    font-family: "Merriweather", serif;
+    font-size: 2ch;
+    font-weight: 300;
+    font-style: normal;  
+}
+
+.textbox {
+    border-style:solid;
+    border-color: #F76AAB;
+    background-color: #fff; 
+    padding: 10px;
+    max-width: 100%; /* Maksimal bredde */
+    margin: auto; /* Centrerer tekstboksen */
+    margin-left: 5%;
+    text-align: center; /* Centrerer teksten */
+}
+
+.row{
+    display:inline-flex;
+}
+
+.section1 {
+    background-color: #99CAF3; /*Januar*/
+}
+
+.section2 {
+    background-color: #FF8752; /*Februar*/
+}
+.section3 {
+    background-color: #58B5E3; /*Marts*/
+}
+.section4 {
+    background-color: #F76AAB; /*April*/
+}
+.section5 {
+    background-color: #99CAF3; /*Maj*/
+}
+.section6 {
+    background-color: #FF8752; /*Juni*/
+}
+.section7 {
+    background-color: #58B5E3; /*Juli*/
+}
+.section8 {
+    background-color: #F76AAB; /*August*/
+}
+.section9 {
+    background-color: #99CAF3; /*September*/
+}
+.section10 {
+    background-color: #FF8752; /*Oktober*/
+}
+.section11 {
+    background-color: #58B5E3; /*November*/
+}
+.section12 {
+    background-color: #F76AAB; /*December*/
+}
+
+.pakkeliste{
+    background-color: #99CAF3; /*Pakkeliste*/
+}
+
+
+  .footer{
+    background-color: #FF8752;
+}
+
+  .ikoner{
+    display: flex;
+    justify-content: right;
+  }
