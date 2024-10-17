@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spørgsmål</title>
+    <link rel="stylesheet" href="spoergsmaal.css">
+
+    <!--Fonts: Google Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!--Logoet-->
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo_endelig.png" alt="logo"></a>
+                </div>
+        
+        <!--ChatGPT: "Hvordan laver man en hovedmenulinje, med submener og supplerende subsubmenuer?" https://chatgpt.com/share/67091fe6-a534-8009-9e7a-46c0bbf73d1d -->
+        <nav>
+            <ul class="main-menu">
+                <li><a href="rejsetyper.html">Rejsetyper</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="#">Hvor går rejsen hen i denne måned?</a>
+                        <ul class="subsubmenu">
+                          <li><a href="solferie_aaret_rundt.html">Solferie året rundt</a></li>
+                          <li><a href="#">Vinterferien</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Billige rejser</a>
+                        <ul class="subsubmenu">
+                          <li><a href="SU_venlige_ture.html">SU-vunlige ture</a></li>
+                          <li><a href="#">Destinationer</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                </li>
+        
+                <li><a href="pakkeraad.html">Pakkeråd</a>
+                    <ul class="submenu">
+                        <li><a href="#">Indkøbsliste</a></li>
+                        <li>
+                        <a href="#">Tips og tricks</a>
+                        </li>
+                    </ul>
+                </li>
+                    <li><a href="#">Oplevelser</a>
+                    <ul class="submenu">
+                        <li><a href="#">Seværdigheder</a></li>
+                    </ul>
+                    </li>
+                <li><a href="#">Kontakt</a>
+                    <ul class="submenu">
+                        <li><a href="spoergsmaal.html">Spørgsmål?</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Om</a>
+            </ul> 
+        <!--Søgefelt: "create a search bar" https://www.w3schools.com/howto/howto_css_searchbar.asp--> 
+                <nav class="søgefelt"><input type="text" placeholder="Søg.."></nav>
+        
+        </nav>
+    </header>
+<main>
+<!--CharGPT:"Kan jeg få 3 kolonner med billeder i første kolonne, tekst øverst og form nederst i anden kolonne og billeder i tredje kolonne i HTML?" https://chatgpt.com/share/670f97da-4de0-8009-9594-b385ea8b5b34-->
+    <div class="container">
+        <!-- Første kolonne med billeder -->
+        <div class="column">
+            <div class="billeder1">
+                <img src="images/sejltur_billede.png" alt="sejltur">
+                <img src="images/mayabay_billede.png" alt="maya bay">
+                <img src="images/baal_billede.png" alt="baal">
+            </div>
+        </div>
+
+        <!-- Anden kolonne med tekst øverst og form nederst -->
+        <div class="column">
+            <div class="text">
+                <h1>Har du spørgsmål?</h1>
+                <p>Har du nogle spørgsmål eller input?<br>
+                    Så vil vi vende tilbage hurtigst muligt, og forhåbentlig give dig det svar du søger!</p>
+            </div>
+            <form class="form">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+<!--HER ER KODEN IKKE VALID-->
+                <label for="telefonnummer">Telefonnummer:</label>
+                <input type="telefonnummer" id="telefonnummer" name="telefonnummer">
+                <label for="emne">Emne:</label>
+<!--HER ER KODEN IKKE VALID-->
+                <input type="emne" id="emne" name="emne">
+                <label for="dit_spørgsmål">Dit spørgsmål:</label>
+                <textarea name="dit_spørgsmål" id="dit_spørgsmål" rows="6" cols="40" placeholder="Skriv dit spørgsmål her..."></textarea>
+            </form>
+            <form action="svar.html" method="get" target="_blank"><button type="submit">Indsend</button></form>
+
+        </div>
+
+        <!-- Tredje kolonne med billeder -->
+        <div class="column">
+            <div class="billeder2">
+                <img src="images/luftballon_billede.png" alt="luftballon">
+                <img src="images/bade_billede.png" alt="bade">
+                <img src="images/bygning_billede.png" alt="bygning">
+            </div>
+        </div>
+    </div>
+
+</main>
+    <footer class="footer">
+        <div class="ikoner">
+            <a href="https://www.instagram.com/"><img src="images/instagram_icon.png" alt="instagram_icon"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook_icon.png" alt="facebook_icon"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube_icon.png" alt="youtube_icon"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
