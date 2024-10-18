@@ -50,6 +50,7 @@
     z-index: 1000;
   }
 
+  /*Søgefelt: "create a search bar" https://www.w3schools.com/howto/howto_css_searchbar.asp */
   .søgefelt{
     justify-content: right;
     padding: 9px;
@@ -260,10 +261,12 @@ p{
     padding-top: 20px;
 }
 
+/*Baggrundsfarve på footer*/
   .footer{
     background-color: #FF8752;
 }
 
+/*Ikoner i footer*/
   .ikoner{
     display: flex;
     justify-content: right;
